@@ -1,4 +1,4 @@
-<?php
+<?php//20160926
 /**
  * RSS输出
  * @copyright (c) Emlog All Rights Reserved
