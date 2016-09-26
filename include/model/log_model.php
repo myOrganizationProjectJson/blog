@@ -168,7 +168,7 @@ class Log_Model {
 	 * @param int $perPageNum
 	 * @return array
 	 */
-	function getLogsForHome($condition = '', $page = 1, $perPageNum) {
+	function getLogsForHome($condition = '', $page = 1, $perPageNum=12) {
 		$timezone = Option::get('timezone');
 		$start_limit = !empty($page) ? ($page - 1) * $perPageNum : 0;
 		$limit = $perPageNum ? "LIMIT $start_limit, $perPageNum" : '';
