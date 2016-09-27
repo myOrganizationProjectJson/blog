@@ -31,7 +31,7 @@ define('ROLE', ISLOGIN === true ? $userData['role'] : ROLE_VISITOR);
 define('UID', ISLOGIN === true ? $userData['uid'] : '');
 //站点固定地址
 //define('BLOG_URL', Option::get('blogurl'));
-define('BLOG_URL','http://'.$_SERVER['HTTP_HOST'].'/');
+define('BLOG_URL','//'.$_SERVER['HTTP_HOST'].'/');
 //模板库地址
 define('TPLS_URL', BLOG_URL.'content/templates/');
 //模板库路径
