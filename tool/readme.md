@@ -11,3 +11,5 @@ include\controller  controller位置
 \include\model  model位置
 
 admin/widgets.php?activated=true&wg=1 侧边栏可以在这里修改顺序
+
+20160928
