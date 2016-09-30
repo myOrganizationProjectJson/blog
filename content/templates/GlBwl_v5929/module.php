@@ -269,7 +269,7 @@ function blog_navi(){
         $current_tab = BLOG_URL . trim(Dispatcher::setPath(), '/') == $value['url'] ? 'current' : 'common';
 		?>
 		<li class="item <?php echo $current_tab;?>">
-			<a href="<?php echo Url::sort($value['typeId']);//$value['url']; ?>" <?php echo $newtab;?>><?php echo $value['naviname']; ?></a>
+			<a href="//<?php echo $value['url']; ?>" <?php echo $newtab;?>><?php echo $value['naviname']; ?></a>
 			<?php if (!empty($value['children'])) :?>
             <ul class="sub-nav">
                 <?php foreach ($value['children'] as $row){
