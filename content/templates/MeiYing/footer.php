@@ -20,9 +20,9 @@ if (!defined('EMLOG_ROOT')) {
 <nav id="mmenu" role="navigation"><?php blog_navi2();?></nav>
 </div>
 <footer id="footer" role="contentinfo">
-	<address>©&nbsp;<?php echo $blogname; ?>|Powered by <a rel="license" title="我在用emlog <?php echo Option::EMLOG_VERSION;?>" href="http://www.emlog.net" target="_blank">emlog</a> & Theme by <a rel="license" title="麦特佐罗" href="http://hc123.site/zorro" target="_blank">麦特佐罗</a>
+	<address>©&nbsp;<?php echo $blogname; ?>|Powered by <a rel="license" title=" <?php echo Option::EMLOG_VERSION;?>" href="//verytalk.cn" target="_blank">verytalk</a> 
 		<div class="copyright">
-			<a href="http://www.miibeian.gov.cn" target="_blank"><?php echo $icp; ?></a><?php echo $footer_info; ?><?php doAction('index_footer'); ?>
+			<a href="//verytalk.cn" target="_blank"><?php echo $icp; ?></a><?php echo $footer_info; ?><?php doAction('index_footer'); ?>
 		</div>
 	</address>
 </footer>

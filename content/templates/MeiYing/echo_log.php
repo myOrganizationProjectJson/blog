@@ -35,20 +35,6 @@ if(!defined('EMLOG_ROOT')) {exit('error!');}
 	</article>
 	<?php doAction('log_related', $logData); ?>
 	<?php $CACHE = Cache::getInstance();$sta_cache = $CACHE->readCache('sta');if($sta_cache['lognum']>=6):?>
-	<div class="post-related">
-		<h3><i class="icon-aperture"></i>暧昧贴</h3>
-		<ul>
-			<?php $date = time() - 3600 * 24 * 360;$Log_Model = new Log_Model();$viewslogs = $Log_Model->getLogsForHome("AND date > {$date} ORDER BY views DESC,date DESC", 1, 6);?>
-			<?php foreach($viewslogs as $value): ?>
-			<li><a rel="bookmark" href="<?php echo $value['log_url']; ?>" title="<?php echo $value['log_title']; ?>" target="_blank">
-				<div class="thumb"></div>
-				<div class="title"><?php echo $value['log_title']; ?></div>
-				<div class="modified"><?php if($value['comnum']>70){ echo '<span class="icon-star5"></span>'; }else if($value['comnum']>50){ echo '<span class="icon-star4"></span>'; }else if($value['comnum']>30){ echo '<span class="icon-star3"></span>'; }else if($value['comnum']>10){ echo '<span class="icon-star2"></span>'; }else{ echo '<i class="icon-star1"></i>'; }; ?></div></a>
-			</li>
-			<?php endforeach; ?>
-		</ul>
-		<div class="clear"></div>
-	</div>
 	<?php endif;?>
 	<div class="post-navigation">
 		<?php neighbor_log($neighborLog); ?>
