@@ -26,7 +26,7 @@ if(!defined('EMLOG_ROOT')) {exit('error!');}
 			<?php share(); ?>
 		</address>
 		<div class="post-context">
-			<i class="icon-quote"></i><?php echo $log_content; ?>
+			<?php echo $log_content; ?>
 		</div>
 		<footer>
 			<i class="icon-flag"></i> 分类：<div class="post-tags"><?php blog_sort($logid); ?></div>标签：<div class="post-tags"><?php blog_tag($logid);?></div>

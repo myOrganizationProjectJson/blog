@@ -11,7 +11,6 @@ if(!defined('EMLOG_ROOT')) {exit('error!');}
 	<a onclick="goTop();" href="javascript:void(0);">返回顶部</a> &nbsp;&nbsp;
 	<a href="/">首页</a> &nbsp;&nbsp;
 <a href="<?php echo BLOG_URL; ?>m/" title="手机版本" target="_blank">手机版本</a> &nbsp;&nbsp;
-<a href="<?php echo BLOG_URL; ?>admin" class="hint--left hint--error" title="站长的后花园，闲人止步！ ^_^" >后花园</a>&nbsp;&nbsp;
 
 	<br>版权所有：<a href="<?php echo BLOG_URL; ?>" class="chaffle" data-lang="zh"><?php echo $blogname; ?></a>&nbsp;&nbsp;&nbsp;
 站长：<span class="chaffle" data-lang="zh">

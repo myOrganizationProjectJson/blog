@@ -47,7 +47,7 @@ require_once View::getView('module');
 			<div class="openmenu" onclick="mmenu()"><i class="icon-plus"></i></div>
 		</div>
 		<ul class="m-nav">
-			<li><a title="归档" rel="nofollow" href="<?php echo BLOG_URL; ?>archivers">归档</a></li><li><li><a title="留言" rel="nofollow" href="<?php echo BLOG_URL; ?>guestbook">留言</a></li><li><a title="RSS" rel="nofollow" href="<?php echo BLOG_URL; ?>rss.php">RSS</a></li><li class="m-sch">
+			<li><a title="归档" rel="nofollow" href="<?php echo BLOG_URL; ?>">归档</a></li><li><li><a title="留言" rel="nofollow" href="<?php echo BLOG_URL; ?>guestbook">留言</a></li><li><a title="RSS" rel="nofollow" href="<?php echo BLOG_URL; ?>rss.php">RSS</a></li><li class="m-sch">
 				<a id="hsch" title="搜索" href="#">搜索</a>
 				<form id="hschform" class="form" name="keyform" action="<?php echo BLOG_URL; ?>index.php" method="get">
 					<input class="txt" type="text" name="keyword"></input>
