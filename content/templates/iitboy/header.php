@@ -154,7 +154,7 @@ require_once View::getView('module');
     <link href="<?php echo TEMPLATE_URL; ?>main.css?" rel="stylesheet" type="text/css">
     <link href="<?php echo TEMPLATE_URL; ?>js/csshake.min.css" rel="stylesheet">
     <link href="<?php echo TEMPLATE_URL; ?>js/animate.min.css" rel="stylesheet">
-    <link href="http://libs.baidu.com/fontawesome/4.2.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo TEMPLATE_URL; ?>js/font-awesome.css" rel="stylesheet" type="text/css" />
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<?php echo BLOG_URL; ?>xmlrpc.php?rsd">
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="<?php echo BLOG_URL; ?>wlwmanifest.xml">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo BLOG_URL; ?>rss.php">
