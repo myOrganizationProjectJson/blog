@@ -259,7 +259,13 @@ function blog_navi(){
 	global $CACHE;
 	$navi_cache = $CACHE->readCache('navi');
 	?>
-	<?php foreach($navi_cache as $value):if($value['url'] == ROLE_ADMIN && (ROLE == ROLE_ADMIN || ROLE == ROLE_WRITER)):?>
+	<?php foreach($navi_cache as $value):
+	
+	if ($value['pid'] != 0) {
+	    continue;
+	}
+	
+	if($value['url'] == ROLE_ADMIN && (ROLE == ROLE_ADMIN || ROLE == ROLE_WRITER)):?>
 	<li class="item common"><a href="<?php echo BLOG_URL; ?>admin/">管理</a></li>
 	<li class="item common"><a href="<?php echo BLOG_URL; ?>admin/?action=logout">退出</a></li>
 	<?php continue;endif;$newtab = $value['newtab'] == 'y' ? 'target="_blank"' : ''; $value['url'] = $value['isdefault'] == 'y' ? BLOG_URL . $value['url'] : trim($value['url'], '/');$current_tab = BLOG_URL . trim(Dispatcher::setPath(), '/') == $value['url'] ? 'current' : 'common';?>
