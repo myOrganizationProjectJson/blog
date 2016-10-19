@@ -265,12 +265,12 @@ function blog_navi(){
 			continue;
 		endif;
 		$newtab = $value['newtab'] == 'y' ? 'target="_blank"' : '';
-        $value['url'] = $value['isdefault'] == 'y' ? BLOG_URL . $value['url'] : trim($value['url'], '/');
+        $value['url'] = $value['isdefault'] == 'y' ? '//'.BLOG_URL . $value['url'] : trim($value['url'], '/');
         $current_tab = BLOG_URL . trim(Dispatcher::setPath(), '/') == $value['url'] ? 'current' : 'common';
 		?>
 		
 		<li class="item <?php echo $current_tab;?>">
-			<a href="<?php echo $value['url']; ?>" <?php echo $newtab;?> class="chaffle" data-lang="zh"><?php echo $value['naviname']; ?></a>
+			<a href="//<?php echo $value['url']; ?>" <?php echo $newtab;?> class="chaffle" data-lang="zh"><?php echo $value['naviname']; ?></a>
 			<?php if (!empty($value['children'])) :?>
             <ul class="sub-nav">
                 <?php foreach ($value['children'] as $row){
@@ -283,7 +283,7 @@ function blog_navi(){
             <ul class="sub-nav">
                 <?php foreach ($value['childnavi'] as $row){
                         $newtab = $row['newtab'] == 'y' ? 'target="_blank"' : '';
-                        echo '<li><a class="chaffle" data-lang="zh" href="' . $row['url'] . "\" $newtab >" . $row['naviname'].'</a></li>';
+                        echo '<li><a class="chaffle" data-lang="zh" href="//' . $row['url'] . "\" $newtab >" . $row['naviname'].'</a></li>';
                 }?>
 			</ul>
 			
@@ -317,10 +317,10 @@ function blog_navi2(){
 		endif;
 		$newtab = $value['newtab'] == 'y' ? 'target="_blank"' : '';
         $value['url'] = $value['isdefault'] == 'y' ? BLOG_URL . $value['url'] : trim($value['url'], '/');
-        $current_tab = BLOG_URL . trim(Dispatcher::setPath(), '/') == $value['url'] ? 'current' : 'common';
+        $current_tab = '//'.BLOG_URL . trim(Dispatcher::setPath(), '/') == $value['url'] ? 'current' : 'common';
 		?>	
 		<li class="item <?php echo $current_tab;?>">
-			<a href="<?php echo $value['url']; ?>" <?php echo $newtab;?> class="shake shake-little"><?php echo $value['naviname']; ?></a>&nbsp;&nbsp;&nbsp;
+			<a href="//<?php echo $value['url']; ?>" <?php echo $newtab;?> class="shake shake-little"><?php echo $value['naviname']; ?></a>&nbsp;&nbsp;&nbsp;
 		</li>
 	<?php endforeach; ?>
 	</div>

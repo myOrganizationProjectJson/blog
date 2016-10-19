@@ -265,7 +265,7 @@ function blog_navi(){
 	<?php continue;endif;$newtab = $value['newtab'] == 'y' ? 'target="_blank"' : ''; $value['url'] = $value['isdefault'] == 'y' ? BLOG_URL . $value['url'] : trim($value['url'], '/');$current_tab = BLOG_URL . trim(Dispatcher::setPath(), '/') == $value['url'] ? 'current' : 'common';?>
 	<?php if (!empty($value['children'])) :?>
 	<li class="item <?php echo $current_tab;?>">
-		<a class="catbtns" href="<?php echo $value['url']; ?>" <?php echo $newtab;?>><?php echo $value['naviname']; ?><i class="arrow"></i></a>
+		<a class="catbtns" href="//<?php echo $value['url']; ?>" <?php echo $newtab;?>><?php echo $value['naviname']; ?><i class="arrow"></i></a>
 		<ul class="sub-menu">
 			<?php foreach ($value['children'] as $row){
 					echo '<li><a href="'.Url::sort($row['sid']).'">'.$row['sortname'].'</a></li>';
@@ -274,7 +274,7 @@ function blog_navi(){
 	</li>
 	<?php elseif (!empty($value['childnavi'])) :?>
 	<li class="item <?php echo $current_tab;?>">
-		<a class="catbtns" href="<?php echo $value['url']; ?>" <?php echo $newtab;?>><?php echo $value['naviname']; ?><i class="arrow"></i></a>
+		<a class="catbtns" href="//<?php echo $value['url']; ?>" <?php echo $newtab;?>><?php echo $value['naviname']; ?><i class="arrow"></i></a>
 		<ul class="sub-nav">
 			<?php foreach ($value['childnavi'] as $row){
 					$newtab = $row['newtab'] == 'y' ? 'target="_blank"' : '';
@@ -284,7 +284,7 @@ function blog_navi(){
 	</li>
 	<?php else:?>
 	<li class="item <?php echo $current_tab;?>">
-		<a href="<?php echo $value['url']; ?>" <?php echo $newtab;?>>
+		<a href="//<?php echo $value['url']; ?>" <?php echo $newtab;?>>
 		<?php echo $value['naviname']; ?>
 		</a>
 	</li>
@@ -319,7 +319,7 @@ function blog_navi2(){
 		</li>
 		<?php else: ?>
 		<li class="<?php echo $current_tab;?>">
-			<i class="icon-stop"></i><a href="<?php echo $value['url']; ?>" <?php echo $newtab;?>><?php echo $value['naviname']; ?></a>
+			<i class="icon-stop"></i><a href="//<?php echo $value['url']; ?>" <?php echo $newtab;?>><?php echo $value['naviname']; ?></a>
 		</li>
 		<?php endif;?>
 		<?php endforeach; ?>
