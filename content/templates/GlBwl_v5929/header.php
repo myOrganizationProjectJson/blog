@@ -84,12 +84,10 @@ function chk_ie_browser() {
         $usingie = false;
     }
     return $usingie;
-}
+}function autoHttps(){        if ($_SERVER["HTTPS"] <> "on")    {        $xredir = "https://".$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];        header("Location: ".$xredir);    }    } 
 if(chk_ie_browser()){
     header("Location:code.html");
-      exit();
-    
-}
+      exit();}if(AUTO_HTTPS){      autoHttps();    }
 ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
@@ -97,7 +95,7 @@ if(chk_ie_browser()){
 <meta charset="utf-8">
 <meta name="renderer" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<!-- meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+<!-- meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"> --><meta name="keywords" content="verytalk,php,java,linux,技术,博客,教程,网络,黑客,blog">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <title><?php echo $site_title; ?></title>
