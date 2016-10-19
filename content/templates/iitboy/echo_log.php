@@ -60,9 +60,9 @@ echo gmdate('Y年n月j日 G:i', $date);echo " 星期".$weekarray[gmdate('w', $da
 <span class="blog_url">本文地址：</span><a href="<?php echo Url::log($logid); ?>"><?php echo Url::log($logid); ?></a><br>
 <b>版权声明：</b>若无注明，本文皆为“<span class="blog_name"><?php echo $blogname; ?></span>”原创，转载请保留文章出处。
 	</div><div id="gaodu1"></div></div>
-	<div class="cutline"><span><a href="http://www.iitboy.cn" target="_blank">正文到此结束</a></span></div>
+	<div class="cutline"><span><a href="//verytalk.cn" target="_blank">正文到此结束</a></span></div>
 	
-	<div class="rkdic"><a href="http://www.rkidc.net/?refcode=je4ybuw2m" target="_blank"><img src="http://cdn.rkidc.loveml.com/700x100.gif" alt="" /></a>
+	<div class="rkdic"></a>
 	</div>
 	<div id="shangxiapian_2"><?php neighbor_log2($neighborLog); ?><div id="gaodu1"></div></div>
 	<div id="shangxiapian"><?php neighbor_log($neighborLog); ?><div id="gaodu1"></div></div> 

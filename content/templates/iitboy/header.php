@@ -160,7 +160,7 @@ require_once View::getView('module');
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo BLOG_URL; ?>rss.php">
     <script src="<?php echo BLOG_URL; ?>include/lib/js/common_tpl.js" type="text/javascript"></script>
     <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
-	  <script language="javascript" src="/content/plugins/Fw_player/js/player.js"></script>
+	  <!-- script language="javascript" src="/content/plugins/Fw_player/js/player.js"></script> -->
     <script type="text/javascript" src="<?php echo TEMPLATE_URL; ?>js/pjax.js"></script>
     <script>$(document).pjax('a[target!=_blank]', '#contentleftt', {fragment: '#contentleftt',timeout: 8000});
       $(document).on('pjax:send',function() {
@@ -180,14 +180,14 @@ require_once View::getView('module');
     <div class="bg-fixed"></div>
     <div class="donghua">
       <div id="iitboy_logo">
-        <a href="/" title="寒光博客">
-          <img src="<?php echo TEMPLATE_URL; ?>images/logo.png" class="animated tada"></a>
+        <a href="/" title="寒光博客" style="font-size: 56px;rgba(71,200,81,0.72);">
+         verytalk</a>
         <br>
         <div id="tock" style="top:-3px">
           <div class="hibox">
             <div class="hi container">
-              <a href="javascript:;" onclick="getkoto();" title="换一条">
-                <span class="hitokoto" id="hitokoto">Loading...（欢迎来到寒光博客~我是会动的哟！）</span></a>
+              <a href="javascript:;"  title="">
+                <span></span></a>
             </div>
           </div>
         </div>

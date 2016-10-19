@@ -27,7 +27,7 @@ function widget_blogger($title){
 	<div id="zidingyi">
 	<ul>
 	<div id="qq">
-<a href="http://wpa.qq.com/msgrd?v=3&uin=987284242&site=qq&menu=yes" target="_blank" class="hint--top  hint--rounded" data-hint="在线联系站长QQ">
+<!-- 
 <img src="/content/templates/iitboy/images/qq.png" onmouseover="this.src='/content/templates/iitboy/images/qq2.png'" onmouseout="this.src='/content/templates/iitboy/images/qq.png'"></a> 
 <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=w-r79PH79-H38YOysu2grK4" target="_blank" class="hint--top  hint--rounded" data-hint="在线给站长写信。">
 <img src="/content/templates/iitboy/images/mail.png" onmouseover="this.src='/content/templates/iitboy/images/mail2.png'" onmouseout="this.src='/content/templates/iitboy/images/mail.png'"></a> 
@@ -37,6 +37,8 @@ function widget_blogger($title){
 <a href="/about/zzjs.html" target="_blank" class="hint--top  hint--rounded" data-hint="站长介绍"><img src="/content/templates/iitboy/images/ren.png" onmouseover="this.src='/content/templates/iitboy/images/ren2.png'" onmouseout="this.src='/content/templates/iitboy/images/ren.png'"></a>	
 <a href="/lyb.html" class="hint--left  hint--rounded" data-hint="给本站留言"><img src="/content/templates/iitboy/images/liuyan.png" onmouseover="this.src='/content/templates/iitboy/images/liuyan2.png'" onmouseout="this.src='/content/templates/iitboy/images/liuyan.png'"></a>	
 <a href="/" class="hint--left  hint--rounded" data-hint="喜欢本站就捐赠支持吧！"><img src="/content/templates/iitboy/images/juan.png" onmouseover="this.src='/content/templates/iitboy/images/juan2.png'" onmouseout="this.src='/content/templates/iitboy/images/juan.png'"></a></div>	</ul>
+	
+	 -->
 	</div>	</ul>
 	</div>
 <?php }?>
