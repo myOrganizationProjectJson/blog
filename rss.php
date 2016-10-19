@@ -20,7 +20,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>
 <description><![CDATA['.Option::get('bloginfo').']]></description>
 <link>'.$URL.'</link>
 <language>zh-cn</language>
-<generator>www.emlog.net</generator>';
+<generator>verytalk.cn</generator>';
 if (!empty($blog)) {
 $user_cache = $CACHE->readCache('user');
 foreach($blog as $value){
