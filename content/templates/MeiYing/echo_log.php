@@ -19,6 +19,7 @@ if(!defined('EMLOG_ROOT')) {exit('error!');}
 			<i class="icon-hotairballoon"></i> <?php blog_author($author); ?>于<?php echo date('Y年m月d日',$date); ?>发布
 			<?php if(ROLE == 'admin' || ROLE == 'writer'): ?>
 			<ul>
+			
 				<li><i class="icon-edit"></i> <?php editflg($logid,$author); ?></li>
 				<li><i class="icon-hotairballoon"></i> <a title="返回首页" rel="nofollow" href="<?php echo BLOG_URL; ?>">返回首页</a></li>
 			</ul>

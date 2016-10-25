@@ -180,7 +180,7 @@ require_once View::getView('module');
     <div class="bg-fixed"></div>
     <div class="donghua">
       <div id="iitboy_logo">
-        <a href="/" title="寒光博客" style="font-size: 56px;rgba(71,200,81,0.72);">
+        <a href="/" title="verytalk" style="font-size: 56px;rgba(71,200,81,0.72);">
          verytalk</a>
         <br>
         <div id="tock" style="top:-3px">

@@ -574,11 +574,11 @@ function index_t($num){
 	while($row = $t->fetch_array($list)){
 	?>
 	<div id="gonggao">
-     <div id="ggwz"><a href="/t"><?php echo $row['content'];?></a></div>
+     <div id="ggwz"><a href="#"><?php echo $row['content'];?></a></div>
      <div id="gonggao_img"><img src="<?php echo TEMPLATE_URL; ?>images/gonggao.png"></div>
     </div>
 	<div id="gonggao_bk">
-     <div class="ggwz2"><img src="<?php echo TEMPLATE_URL; ?>images/gonggao_xlb.gif"> <b>公告：</b><a href="/t"><?php echo $row['content'];?></a></div>
+     <div class="ggwz2"><img src="<?php echo TEMPLATE_URL; ?>images/gonggao_xlb.gif"> <b>公告：</b><a href="#"><?php echo $row['content'];?></a></div>
 	 </div>
 	<?php }?>
 <?php } ?>
