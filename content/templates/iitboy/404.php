@@ -11,7 +11,7 @@ if(!defined('EMLOG_ROOT')) {exit('error!');}
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="HandheldFriendly" content="True">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>抱歉 此页面被键盘大侠拿去指点江山了【寒光博客-www.iitboy.cn】</title>
+  <title>抱歉 此页面被键盘大侠拿去指点江山了【verytalk.cn】</title>
   <style>
     html {
       display: table;

@@ -1,6 +1,5 @@
 <?php 
 /**
- * 页面底部信息 www.iitboy.cn
  */
 if(!defined('EMLOG_ROOT')) {exit('error!');} 
 ?>

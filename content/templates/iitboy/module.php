@@ -624,17 +624,17 @@ echo TEMPLATE_URL . 'images/iitboycn/'.rand(1,14).'.jpg';
                  $urls = array( 
              $url, 
          ); 
-         $api = 'http://data.zz.baidu.com/urls?site=www.iitboy.cn&token=mGK65USq2yMVwZEe'; 
-         $ch = curl_init(); 
-         $options =  array( 
-         CURLOPT_URL => $api, 
-         CURLOPT_POST => true, 
-         CURLOPT_RETURNTRANSFER => true, 
-         CURLOPT_POSTFIELDS => implode("\n", $urls), 
-         CURLOPT_HTTPHEADER => array('Content-Type: text/plain'),); 
-         curl_setopt_array($ch, $options); 
-         $result = curl_exec($ch); 
-         echo ''; 
+//          $api = 'http://data.zz.baidu.com/urls?site=www.verytalk.cn&token=mGK65USq2yMVwZEe'; 
+//          $ch = curl_init(); 
+//          $options =  array( 
+//          CURLOPT_URL => $api, 
+//          CURLOPT_POST => true, 
+//          CURLOPT_RETURNTRANSFER => true, 
+//          CURLOPT_POSTFIELDS => implode("\n", $urls), 
+//          CURLOPT_HTTPHEADER => array('Content-Type: text/plain'),); 
+//          curl_setopt_array($ch, $options); 
+//          $result = curl_exec($ch); 
+//          echo ''; 
                    
              } 
             echo "<a style=\"color:red;\" rel=\"external nofollow\" title=\"点击提交收录！\" target=\"_blank\" href=\"http://zhanzhang.baidu.com/sitesubmit/index?sitename=$url\">已自动提交收录</a>"; 

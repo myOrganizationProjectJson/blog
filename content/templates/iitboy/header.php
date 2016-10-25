@@ -4,7 +4,6 @@ Template Name:寒光唯美式V2.4.1
 Description:二次元，小清新 唯美~~~ 
 Version:<span style="color:#E60026;">响应式模版，自适应手机 电脑 平板等。完美兼容多说。<<br>修改embed.js的多说ID<br>必装插件：主题编辑 多说 <br>QQ:987284242 请支持正版模版</span>
 Author:寒光
-Author Url:http://www.iitboy.cn/
 Sidebar Amount:1
 */
 
