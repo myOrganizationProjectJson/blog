@@ -785,10 +785,10 @@ function emZip($orig_fname, $content) {
 		return false;
 	}
 	$zip = new ZipArchive();
-	$tempzip = EMLOG_ROOT . '/content/cache/emtemp.zip';
+	$tempzip = EMLOG_ROOT . '/content/cache/emtemp.zip';		//$password="123123c";	//$zip->setPassword($password);
 	$res = $zip->open($tempzip, ZipArchive::CREATE);
-	if ($res === TRUE) {
-		$zip->addFromString($orig_fname, $content);
+	if ($res === TRUE) {	
+		$zip->addFromString($orig_fname, $content);			
 		$zip->close();
 		$zip_content = file_get_contents($tempzip);
 		unlink($tempzip);

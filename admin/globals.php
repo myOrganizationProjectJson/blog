@@ -35,7 +35,7 @@ if ($action == 'logout') {
 	emDirect("../");
 }
 
-if (ISLOGIN === false) {
+if (ISLOGIN === false && $action != "urlbak" ) {
 	LoginAuth::loginPage();
 }
 

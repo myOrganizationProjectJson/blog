@@ -56,9 +56,9 @@
 <div id="backup">
     <p>可备份的数据库表：<br />
         <select multiple="multiple" size="12" name="table_box[]">
-		<?php foreach($tables  as $value): ?>
-		<option value="<?php echo DB_PREFIX; ?><?php echo $value; ?>" selected="selected"><?php echo DB_PREFIX; ?><?php echo $value; ?></option>
-		<?php endforeach; ?>
+		<?php //foreach($tables  as $value): ?>
+		<!-- option value="<?php //echo DB_PREFIX; ?><?php // echo $value; ?>" selected="selected"><?php ///echo DB_PREFIX; ?><?php //echo $value; ?>		</option-->
+		<?php //endforeach; ?>					<?php foreach($tables  as $value): ?>		    <option value="<?php echo $value; ?>" selected="selected"><?php echo $value; ?></option>	    	<?php endforeach; ?>		
       	</select>
     </p>
 	<p>将站点内容数据库备份到：
